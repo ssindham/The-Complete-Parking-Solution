@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutHolder" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/topSection"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#DDDDDD"
+            
+            android:padding="5dp" >
+
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:layout_weight="1"
+                android:background="@drawable/customborder" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/choose1" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Module"
+                    android:textColor="#115095"
+                    android:paddingLeft="7dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:layout_weight="2"
+                android:background="@drawable/customborder" >
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:background="#00000000"
+                    android:src="@drawable/gears1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        
+
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#29A9D2"
+    android:id="@+id/middleSection"
+    android:paddingLeft="20dp"
+    
+    android:paddingRight="20dp">
+
+            <TextView android:id="@+id/textView2" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="Start" 
+                android:textColor="#ffffff"
+                android:textSize="29sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="40dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/validSpot"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:src="@drawable/rightsign" />
+                <ImageButton
+                    android:id="@+id/rentSpace"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:src="@drawable/search" />
+                
+                
+                
+                
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Valid Parking Spot?"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Search Area To Park Or Rent"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <LinearLayout
+                android:paddingTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/payOnline"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:src="@drawable/payonline" />
+                <ImageButton
+                    android:id="@+id/payOnce"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:src="@drawable/location" />
+                
+                
+                
+                
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Online!"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Once,Park Anywhere!"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+            
+
+        </LinearLayout>
+        
+        </LinearLayout>
+       

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:hint="Rent Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:id="@+id/rent_msg" />
+
+    <Button
+        android:text="See Renting Places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rent_msg"
+        android:layout_alignLeft="@+id/rent_msg"
+        android:layout_alignStart="@+id/rent_msg"
+        android:layout_marginTop="53dp"
+        android:id="@+id/renting_places" />
+
+    <Button
+        android:text="Get Your Receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/rent_msg"
+        android:layout_alignEnd="@+id/rent_msg"
+        android:id="@+id/receipt_button" />
+</RelativeLayout>

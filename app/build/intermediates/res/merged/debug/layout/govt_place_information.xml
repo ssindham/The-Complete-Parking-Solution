@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Place Name"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/place_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Attendant Name"
+        android:ems="10"
+        android:layout_below="@+id/place_name"
+        android:layout_alignRight="@+id/place_name"
+        android:layout_alignEnd="@+id/place_name"
+        android:layout_marginTop="33dp"
+        android:id="@+id/attendant_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Toatal Capacity"
+        android:ems="10"
+        android:layout_below="@+id/attendant_name"
+        android:layout_alignRight="@+id/attendant_name"
+        android:layout_alignEnd="@+id/attendant_name"
+        android:layout_marginTop="31dp"
+        android:id="@+id/total_capacity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Current Capacity"
+        android:ems="10"
+        android:layout_below="@+id/total_capacity"
+        android:layout_alignLeft="@+id/total_capacity"
+        android:layout_alignStart="@+id/total_capacity"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="31dp"
+        android:id="@+id/current_capacity" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/directions1"
+        android:layout_below="@+id/current_capacity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/directions" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Distance"
+        android:ems="10"
+        android:layout_below="@+id/current_capacity"
+        android:layout_alignLeft="@+id/current_capacity"
+        android:layout_alignStart="@+id/current_capacity"
+        android:id="@+id/dist" />
+</RelativeLayout>

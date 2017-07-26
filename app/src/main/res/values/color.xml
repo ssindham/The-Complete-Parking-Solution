@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <item name="image_item_selected_for_dots" type="color">#FFFFFF</item>
+    <item name="image_item_unselected_for_dots" type="color">#B3FFFFFF</item>
+   
+</resources>

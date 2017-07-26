@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Date1"
+        android:ems="10"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:id="@+id/date1"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Time1"
+        android:ems="10"
+        android:id="@+id/time1"
+        android:layout_below="@+id/date1"
+        android:layout_alignLeft="@+id/date1"
+        android:layout_alignStart="@+id/date1" />
+
+    <TextView
+        android:text="To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time1"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView23" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Date2"
+        android:ems="10"
+        android:layout_below="@+id/textView23"
+        android:layout_alignRight="@+id/time1"
+        android:layout_alignEnd="@+id/time1"
+        android:id="@+id/date2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Time2"
+        android:ems="10"
+        android:layout_below="@+id/date2"
+        android:layout_alignLeft="@+id/date2"
+        android:layout_alignStart="@+id/date2"
+        android:id="@+id/time2" />
+
+    <Button
+        android:text="Calculate Charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate_charge"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/time2"
+        android:layout_alignEnd="@+id/time2" />
+
+    <TextView
+        android:text="Time "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate_charge"
+        android:layout_toLeftOf="@+id/calculate_charge"
+        android:layout_toStartOf="@+id/calculate_charge"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:id="@+id/textView24" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Total Time"
+        android:ems="10"
+        android:layout_alignTop="@+id/calculate_charge"
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/time" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:id="@+id/textView25" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Total Charge"
+        android:ems="10"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:id="@+id/charge" />
+
+    <Button
+        android:text="Pay Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge"
+        android:layout_alignLeft="@+id/charge"
+        android:layout_alignStart="@+id/charge"
+        android:layout_marginTop="19dp"
+        android:id="@+id/pay_button" />
+</RelativeLayout>

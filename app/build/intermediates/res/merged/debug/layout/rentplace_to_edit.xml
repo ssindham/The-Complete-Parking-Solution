@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/textView12" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Longitude"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="479dp"
+        android:id="@+id/longitude_text" />
+
+    <TextView
+        android:text="Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_toLeftOf="@+id/longitude_text"
+        android:layout_toStartOf="@+id/longitude_text"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Latitude"
+        android:ems="10"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/longitude_text"
+        android:layout_alignStart="@+id/longitude_text"
+        android:layout_marginTop="16dp"
+        android:id="@+id/latitude_text" />
+
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitude_text"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView14" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Loaction"
+        android:ems="10"
+        android:id="@+id/location_text"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignLeft="@+id/latitude_text"
+        android:layout_alignStart="@+id/latitude_text" />
+
+    <TextView
+        android:text="Two Wheeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_text"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView15" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="No of two wheelers"
+        android:ems="10"
+        android:layout_below="@+id/location_text"
+        android:layout_alignLeft="@+id/location_text"
+        android:layout_alignStart="@+id/location_text"
+        android:layout_marginTop="12dp"
+        android:id="@+id/twowheeler" />
+
+    <TextView
+        android:text="Four Wheeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twowheeler"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:hint="No of four wheelers"
+        android:ems="10"
+        android:layout_below="@+id/twowheeler"
+        android:layout_alignLeft="@+id/twowheeler"
+        android:layout_alignStart="@+id/twowheeler"
+        android:id="@+id/fourwheeler" />
+
+    <TextView
+        android:text="Days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/fourwheeler"
+        android:layout_alignStart="@+id/fourwheeler"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/textView17" />
+
+    <CheckBox
+        android:text="All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14"
+        android:id="@+id/all" />
+
+    <CheckBox
+        android:text="Mon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/all"
+        android:layout_toRightOf="@+id/all"
+        android:layout_toEndOf="@+id/all"
+        android:id="@+id/mon" />
+
+    <CheckBox
+        android:text="Tues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_toRightOf="@+id/mon"
+        android:layout_toEndOf="@+id/mon"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/tue" />
+
+    <CheckBox
+        android:text="Wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wed"
+        android:layout_alignBaseline="@+id/tue"
+        android:layout_alignBottom="@+id/tue"
+        android:layout_toRightOf="@+id/tue"
+        android:layout_toEndOf="@+id/tue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <CheckBox
+        android:text="Thurs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16"
+        android:id="@+id/thu" />
+
+    <CheckBox
+        android:text="Fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fri"
+        android:layout_below="@+id/mon"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17" />
+
+    <CheckBox
+        android:text="Sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tue"
+        android:layout_toRightOf="@+id/fri"
+        android:layout_toEndOf="@+id/fri"
+        android:id="@+id/sat" />
+
+    <CheckBox
+        android:text="Sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tue"
+        android:layout_toRightOf="@+id/tue"
+        android:layout_toEndOf="@+id/tue"
+        android:id="@+id/sun" />
+
+    <TextView
+        android:text="From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thu"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView18" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="From"
+        android:ems="10"
+        android:id="@+id/from"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:text="To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:id="@+id/textView20" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="To"
+        android:ems="10"
+        android:layout_below="@+id/textView18"
+        android:layout_toRightOf="@+id/all"
+        android:layout_toEndOf="@+id/all"
+        android:id="@+id/to" />
+
+    <TextView
+        android:text="Charge Per Hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView21" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Charge Per Hour"
+        android:ems="10"
+        android:layout_below="@+id/to"
+        android:layout_alignLeft="@+id/tue"
+        android:layout_alignStart="@+id/tue"
+        android:layout_marginTop="12dp"
+        android:id="@+id/chargeEditText" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chargeEditText"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:id="@+id/deletebutton"
+       />
+
+    <ToggleButton
+        android:textOff="Edit"
+        android:textOn="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_or_update"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <Button
+        android:text="Edit Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/wed"
+        android:layout_toEndOf="@+id/wed"
+        android:id="@+id/edit_location" />
+
+
+</RelativeLayout>

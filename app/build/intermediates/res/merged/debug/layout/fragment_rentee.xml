@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_img"
+
+        tools:context="layout.Renter">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:orientation="vertical" >
+
+
+
+            <LinearLayout
+                android:id="@+id/holder1"
+                android:orientation="horizontal"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/checkBoxHolder1"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <CheckBox
+                        android:id="@+id/two"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent"
+                        android:text="Two-Wheeler"
+                        android:orientation="horizontal"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editTextHolder1"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/twowheeler"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:textColor="#06184c"
+                        android:background="#ffffff"
+                        android:alpha="0.5"
+                        >
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/holder2"
+                android:orientation="horizontal"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/checkBoxHolder2"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <CheckBox
+                        android:id="@+id/four"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:layout_height="match_parent"
+                        android:text="Four-Wheeler"
+                        android:orientation="horizontal"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editTextHolder2"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/fourwheeler"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:ems="10"
+                        android:textColor="#06184c"
+                        android:background="#ffffff"
+                        android:alpha="0.5"
+                        >
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timeButtonHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/findButton"
+                    android:text="Find"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

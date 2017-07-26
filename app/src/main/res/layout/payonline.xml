@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background_img"
+
+    android:paddingTop="150dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_holder"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Enter payment:" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_holder"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:singleLine="true"
+        android:alpha="0.5"
+        android:textColor="#06184c"
+        android:hint="Payment"
+        android:textColorHint="#808080"
+        android:ems="10"
+        android:inputType="number">
+        <requestFocus />
+    </EditText></LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pay by PayPal"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"/>
+
+
+</LinearLayout>

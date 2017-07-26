@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_img">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:src="@drawable/arrow_back"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/textFieldHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp" >
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/location_button"
+                    android:text="Add Location"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="location_button_onclick"
+                    />
+                <EditText
+                    android:id="@+id/longitude_text"
+                    android:background="#ffffff"
+                    android:layout_marginBottom="15dp"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="Longitude"
+                    android:textColorHint="#939393"
+                    android:alpha="0.5"
+                    android:textColor="#06184c">
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/latitude_text"
+
+                    android:singleLine="true"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="Latitude"
+                    android:textColorHint="#939393"
+                    android:textColor="#06184c"
+
+                    android:alpha="0.5" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/location_text"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textColor="#06184c"
+                    android:background="#ffffff"
+                    android:layout_marginBottom="15dp"
+
+                    android:hint="Location"
+                    android:textColorHint="#939393"
+                    android:alpha="0.5" >
+
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/holder1"
+                android:orientation="horizontal"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/checkBoxHolder1"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <CheckBox
+                        android:id="@+id/two"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent"
+                        android:text="Two-Wheeler"
+                        android:orientation="horizontal"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editTextHolder1"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/twowheeler"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:textSize="15sp"
+                        android:textColor="#06184c"
+                        android:background="#ffffff"
+                        android:alpha="0.5">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/holder2"
+                android:orientation="horizontal"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/checkBoxHolder2"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <CheckBox
+                        android:id="@+id/four"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:layout_height="match_parent"
+                        android:text="Four-Wheeler"
+                        android:orientation="horizontal"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editTextHolder2"
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="15sp"
+                        android:id="@+id/fourwheeler"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:ems="10"
+                        android:textColor="#06184c"
+                        android:background="#ffffff"
+                        android:alpha="0.5">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timeButtonHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/timeButton"
+                    android:text="Time"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:textSize="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:background="#ffffff"
+                    android:alpha="0.5"
+                    android:orientation="horizontal"
+                    android:id="@+id/holder3">
+                    <CheckBox
+                        android:id="@+id/all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="All"
+                        android:paddingRight="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <CheckBox
+                        android:id="@+id/mon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingRight="20dp"
+                        android:text="Mon"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <CheckBox
+                        android:id="@+id/tue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingRight="20dp"
+                        android:text="Tue"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <CheckBox
+                        android:id="@+id/wed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+
+                        android:text="Wed"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="#ffffff"
+                    android:alpha="0.5"
+                    android:orientation="horizontal"
+                    android:id="@+id/holder4">
+                    <CheckBox
+                        android:id="@+id/thu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Thu"
+                        android:paddingRight="11dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <CheckBox
+                        android:id="@+id/fri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingRight="35dp"
+                        android:text="Fri"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <CheckBox
+                        android:id="@+id/sat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingRight="23dp"
+                        android:text="Sat"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <CheckBox
+                        android:id="@+id/sun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+
+                        android:text="Sun"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:alpha="0.5"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/holder5">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/from_holder">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:id="@+id/rent_from"
+                        android:text="From:"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="7dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/from"
+                        android:singleLine="true"
+                        android:background="#7e7e7e"
+                        android:alpha="0.5"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:id="@+id/from_button"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Set Time"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/buttonshape1"
+                            android:shadowColor="#A8A8A8"
+                            android:alpha="0.5"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="0"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/to_holder"
+                        android:layout_marginTop="10dp">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rent_to"
+                        android:text="To:"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="7dp"
+
+
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/to"
+                        android:singleLine="true"
+                        android:background="#7e7e7e"
+                        android:alpha="0.5"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:id="@+id/to_button"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Set Time"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/buttonshape1"
+                            android:shadowColor="#A8A8A8"
+                            android:alpha="0.5"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="0"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/holder6"
+                    android:orientation="vertical">
+                    <TimePicker
+                        android:id="@+id/timePicker1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+
+                        />
+
+
+                    <Button
+                        android:id="@+id/change_time"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="40dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/buttonshape"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="0"
+
+
+
+                        android:text="Change Time" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/charge_layout_holder"
+                android:orientation="horizontal"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/chargeLabel"
+                    android:text="Charge per hour(in Rs.):"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/chargeText"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:textColor="#06184c"
+                    android:background="#ffffff"
+                    android:alpha="0.5">
+                    <requestFocus />
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingTop="40dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/submitButton"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:textSize="15sp"
+                    android:onClick="rent_register_onclick"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

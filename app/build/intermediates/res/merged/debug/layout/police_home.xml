@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background_img"
+    android:paddingTop="50dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_holder"
+        android:orientation="horizontal"
+        android:layout_marginBottom="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Police"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:alpha="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicle_no_holder"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:textColorHint="#808080"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:id="@+id/vehicle_no"
+            android:layout_marginBottom="15dp"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="Vehicle No"
+            android:alpha="0.5"
+            android:textColor="#06184c">
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/fine_amount_holder">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:textColorHint="#808080"
+            android:id="@+id/fine_amount"
+            android:layout_marginBottom="15dp"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="Fine Amount"
+            android:alpha="0.5"
+            android:textColor="#06184c">
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="45dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:textSize="17sp"
+
+            android:text="Submit"
+            android:id="@+id/submit_button" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

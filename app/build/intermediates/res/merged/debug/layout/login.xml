@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_img"
+    android:alpha="0.8"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="3dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:background="#00000000"
+              
+                android:src="@drawable/arrow_back"
+                android:layout_gravity="center" />
+
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/textFieldHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="80dp" >
+
+            <EditText
+                android:id="@+id/login_email"
+               android:background="#ffffff"
+               android:alpha="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="5"
+                android:inputType="textEmailAddress"
+                android:hint="Email Address"
+                android:textColor="#06184c"
+               
+                 >
+                
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/login_pass"
+                 android:background="#ffffff"
+                 android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="5"
+                android:password="true"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColor="#06184c"
+                android:alpha="0.5" />
+<requestFocus />
+            </LinearLayout>
+            
+        <LinearLayout 
+            android:id="@+id/checkBoxHolder"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+            
+            <CheckBox 
+                android:id="@+id/cbRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                />
+            
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/loginButtonHolder"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+             <Button
+                 android:id="@+id/btnLogin"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:text="Log In"
+                 android:textColor="#ffffff"
+                 android:background="@drawable/buttonshape"
+                 android:shadowColor="#A8A8A8"
+        		 android:shadowDx="0"
+        		 android:shadowDy="0"
+        		 android:shadowRadius="0"
+                 android:onClick="login_onclick" />
+                 
+                 
+                 
+        
+            
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/forgotPasswordHolder"
+             android:orientation="horizontal"
+             android:paddingTop="30dp" >
+
+             <TextView
+                 android:id="@+id/link_to_forgot"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Forgot Password?"
+                 android:textColor="#FFFFFF"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:typeface="sans" />
+
+             <TextView
+                 android:id="@+id/link_to_register"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="right"
+                 android:text="Sign Up Now"
+                 android:textColor="#FFFFFF"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:typeface="sans" />
+
+         </LinearLayout>
+
+        <Button
+            android:text="Go to Rent system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:text="Go to Tenant Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button6"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:text="Go to Police Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:text="Go to Attendant Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button8"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:text="Go to Centralized System"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
