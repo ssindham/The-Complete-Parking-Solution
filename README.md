@@ -10,6 +10,7 @@
 #### **Explanation of each module**
 
 1. Valid Parking Spot
+
 *Situation*
 >You have parked your vehicle outside the bank and after coming from bank, you found that your vehicle has been taken by RTO for parking in non-parking area.
 
