@@ -28,8 +28,9 @@
 *Solution*
 
 >Suppose you are renter, that you are staying in an apartment or you own a piece of land and you want to utilize that land, you can signup and rent that land for parking and earn. If you are a rentee, you can search for parking places and get rented for particular duration and pay the amount to the owner. The search list shown is based on the distance i.e., the nearer places are shown on top of the list.
-* The rentee can speicfy that how many vehicle can be parked, for what duration and days.
-* The renter can also specify the type of vehicle and search the parking places nearby.
+
+*The rentee can speicfy that how many vehicle can be parked, for what duration and days.
+*The renter can also specify the type of vehicle and search the parking places nearby.
 
 3. Pay Once Park Anywhere
 
@@ -49,6 +50,6 @@
 
 *Solution*
 
-Online payment is an integration of **paypal** SDK. The SDK is taken from the internet and integrated into the application. It works on a sandbox.
+>Online payment is an integration of **paypal** SDK. The SDK is taken from the internet and integrated into the application. It works on a sandbox.
 
 
