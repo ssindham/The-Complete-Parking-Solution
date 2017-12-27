@@ -14,6 +14,7 @@
 *Situation*
 
 >You have parked your vehicle outside the bank and after coming from bank, you found that your vehicle has been taken by RTO for parking in non-parking area.
+
 *Solution*
 
 >In this first module, if you have this application installed on your smartphone then at the time of parking it will show you the place you are parking your vehicle is a valid parking area or not. Suppose, you got know the place as non-parking zone in the applcation then as you move the application refreshes itself in every 5 seconds and it notifies you whether it is a parking zone or not.
@@ -26,8 +27,7 @@
 
 *Solution*
 
->Suppose you are renter, that you are staying in an apartment or you own a piece of land and you want to utilize that land, you can signup and rent that land for parking and earn. 
->If you are a rentee, you can search for parking places and get rented for particular duration and pay the amount to the owner. The search list shown is based on the distance i.e., the nearer places are shown on top of the list.
+>Suppose you are renter, that you are staying in an apartment or you own a piece of land and you want to utilize that land, you can signup and rent that land for parking and earn. If you are a rentee, you can search for parking places and get rented for particular duration and pay the amount to the owner. The search list shown is based on the distance i.e., the nearer places are shown on top of the list.
 * The rentee can speicfy that how many vehicle can be parked, for what duration and days.
 * The renter can also specify the type of vehicle and search the parking places nearby.
 
@@ -49,6 +49,6 @@
 
 *Situation*
 
-Online payment is an integration of **paypal** SDK. The SDK is taken from the internet and integrated into the application.
+Online payment is an integration of **paypal** SDK. The SDK is taken from the internet and integrated into the application. It works on a sandbox.
 
 
