@@ -47,7 +47,7 @@
 
 >The above mentioned modules need a payment integration.
 
-*Situation*
+*Solution*
 
 Online payment is an integration of **paypal** SDK. The SDK is taken from the internet and integrated into the application. It works on a sandbox.
 
